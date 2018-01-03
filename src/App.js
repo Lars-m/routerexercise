@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  HashRouter as Router,Route, Link, NavLink} from 'react-router-dom'
+  HashRouter as Router,Route, Link, NavLink, Switch} from 'react-router-dom'
 
 const Home = () => (
   <div>
@@ -37,10 +37,10 @@ const App = () => (
         <li><NavLink to="/jokes">Jokes </NavLink></li>
       </ul>
       <hr />
-      <switch>
+      <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/jokes" component={Jokes} />
-      </switch>
+      </Switch>
     </div>
   </Router>
 )
